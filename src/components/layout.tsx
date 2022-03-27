@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from './header';
 
-type Props = {
+export default function Layout({
+  children,
+}: {
   children: JSX.Element | JSX.Element[];
-};
-
-export default function Layout({ children }: Props): JSX.Element {
+}): JSX.Element {
   return (
     <>
       <Header />
